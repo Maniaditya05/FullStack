@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Class2</title>
+</head>
+<body>
+  <h2>HTML Forms</h2>
+  <form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    
+    <p>Gender:</p>
+    <input type="radio" id="male" name="Gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="Gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <label for="Degree" id="deg">Degree:</label>
+    <select name="degree" id="degree">
+      <option id="bach" value="bach">Bachelor's Degree</option>
+      <option id="mas" value="mas">Master's</option>
+      <option id="pg" value="pg">Post Graduation</option>
+    </select><br><br>
+
+    <p>Technologies You know:</p>
+    <input type="checkbox" id="tech1" name="tch1" value="HTML">
+    <label id="tech" for="tech1"> HTML</label><br>
+    <input type="checkbox" id="tech2" name="tech2" value="CSS">
+    <label for="tech2"> CSS</label><br>
+    <input type="checkbox" id="tech3" name="tech3" value="JavaScript">
+    <label for="tech3"> JavaScript</label><br><br>
+
+    <p>Upload your Resume:</p>
+    <input type="file" id="myFile" name="filename"><br><br>
+
+    <p>Experience In Years:</p>
+    <label for="experience">Years (between 0 and 10):</label>
+    <input type="range" id="experience" name="experience" min="0" max="10"><br><br>
+
+    <label for="birthday">Date Of Birth:</label>
+    <input type="date" id="birthday" name="birthday"><br><br>
+
+    <label for="password" class="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+
+    <label for="cpassword" class="password">Confirm Password:</label>
+    <input type="password" id="cpassword" name="cpassword"><br><br>
+
+    <label for="aboutyourself">Write about yourself:</label><br>
+    <textarea id="aboutyourself" name="aboutyourself" rows="4" cols="20">
+      Write something about yourself
+    </textarea><br><br>
+
+    <table>
+      <tr>
+        <th>numbers</th>
+        <th>alphabets</th>
+      </tr>
+      <tr>
+        <th>1</th>
+        <th>a</th>
+      </tr>
+      <tr>
+        <th>2</th>
+        <th>b</th>
+      </tr>
+      <tr>
+        <th>3</th>
+        <th>c</th>
+      </tr>
+
+    </table>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset"><br><br>
+    <a href="./task2.html">Task2</a>
+    <a href="./userregistration.html">User registration</a>
+  </form> 
+</body>
+</html>

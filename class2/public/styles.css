@@ -1,0 +1,88 @@
+/* Class-2-1 */
+/* #aboutyourself{
+    width: 250px;
+    height: 100px;
+}
+
+#tech {
+    color: red;
+}
+
+.password{
+    color: blue;
+    size: 5px;
+}
+
+p{
+    text-align: center;
+    color: brown;
+    font-size: large;
+}
+
+#fname {
+    background-color: blue;
+}
+#lname{
+    background-color: red;
+}
+
+#deg{
+    border: 5px solid red;
+}
+
+table{
+    border: 1px;
+}
+table tr:nth-child(even){
+    background-color: blue;
+}
+table tr:nth-child(odd){
+    background-color: red;
+}
+
+.centre {
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    border: 3px solid green;
+}
+.left {
+    display: flex;
+    justify-content: left;
+}
+.right {
+    display: flex;
+    justify-content: right;
+} */
+
+/* Class-2-2 */
+/* .row {
+
+    display: flex;
+    margin: auto;
+  }
+
+.col-50 {
+flex: 50%;
+}
+.centre {
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    border: 3px solid green;
+
+}
+.btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+    align-content: center;
+  } */
+
+

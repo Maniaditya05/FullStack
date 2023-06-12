@@ -1,0 +1,283 @@
+nav {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: #333;
+    /* flex-flow: row wrap; */
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+
+}
+
+.items {
+    margin:5px;
+    color: white;
+    display: inline-block;
+}
+
+
+.row {
+    display: flex;
+}
+
+.col1 {
+    background-color: aqua;
+    padding: 10px;
+    height: 300px;
+    width: 100px;
+
+}
+
+.col2 {
+    background-color: burlywood;
+    flex: 1;
+}
+
+.col {
+    border: 2px solid black;
+}
+.row1 {
+    display: flex;
+    align-items: flex-end;
+}
+
+.col {
+    /* align-self: flex-end; */
+    display: flex;
+}
+
+.sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+    width: 25%;
+    height: 25vh;
+}
+
+.cards-row {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 3px solid red;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+.card1,.card2,.card3 {
+    border: 1px solid black;
+    /* width: 100px;
+    height: 100px; */
+    border-radius: 25px;
+    margin: auto;
+    padding:15px;
+    align-items: center;
+
+}
+.center {
+    text-align: center;
+}
+
+.btncen {
+    display: flex;
+    justify-content: center;
+}
+
+.p11 {
+    background-color: yellow;
+}
+
+.row-1 {
+    background-color: #4CAF50;
+}
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.collapsible {
+background-color: #777;
+color: white;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+}
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+  }
+
+  .login {
+    border: 1px solid black;
+    /* width: 100px;
+    height: 100px; */
+    border-radius: 25px;
+    margin: auto;
+    padding:15px;
+    align-items: center;
+}
+
+.timeline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 3px solid black;
+    margin: 10px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+    p {
+        font-size: x-small;
+    }
+  }
+
+@media screen and (max-width: 800px) {
+body {
+    background-color:brown;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .media {
+      width: 100%;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .items {
+        display: none;
+    }
+    div .hamburger {
+        display:flex;
+    }   
+}
+
+@media  screen and (min-width:600px) {
+    div.hamburger {
+        display: none;
+    }
+    
+}
+
+.hamburger {
+
+    margin: 5px;
+    color: white;
+  }
+  
+.line {
+width: 25px;
+height: 3px;
+background-color: white;
+margin: 3px 0;
+}
+
+.overflow {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.overflow-scroll {
+    width: 200px;
+    height: 200px;
+    overflow: scroll;
+    border: 1px solid black;
+}
+
+.overflow-auto {
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+    border: 1px solid black;
+}
+
+.scroll-menu {
+    width: 50px;
+    height: 100px;
+    overflow: scroll;
+    border: 1px solid black;
+}
+.items1 {
+    color: black;
+}
+
+.login-row {
+position: relative;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    flex-direction: column;
+}
+
+.absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
