@@ -4,41 +4,191 @@
     <title>React App</title>
   </head>
   <body>
+    <p id="even"> </p>
+    <ul id="ul"></ul>
+    <p id="john"></p>
+    <p id="grade"></p>
+    <p id="positive"></p>
+    <p id="palindrome"></p>
+    <p id="sum5"></p>
+    <p id="alice"></p>
+    <p id="author"></p>
+    <ul id="primenum"></ul>
     <script>
-      var a=5;
-      var b=6;
-      var string = "aditya";
       var persons = [
         {
           name :"aditya",
           age : 25,
-          fname : "tum",
-          lname : "aditya"
         },
         {
           name :"vijaya",
           age : 25,
-          fname : "pun",
-          lname : "vijaya"
         },
         {
           name :"shanmukh",
           age : 25,
-          fname : "kam",
-          lname : "shanmukh"
         },
         
         {
           name :"rahul",
           age : 25,
-          fname : "per",
-          lname : "rahul"
         },
       ]
-      console.log(a+b);
-      console.log(string);
-      console.log(persons.length);
-      console.log(persons[2].age);
+
+      var emails = [
+        {
+          name :"aditya",
+          email:"aditya5@gmail.com"
+        },
+        {
+          name :"vijaya",
+          email:"vijaya5@gmail.com"
+        },
+        {
+          name :"john",
+          email:"john5@gmail.com"
+        },
+        
+        {
+          name :"rahul",
+          email:"rahul5@gmail.com"
+        },
+      ]
+      // console.log(a+b);
+      // console.log(string);
+      // console.log(persons.length);
+      // console.log(persons[2].age);
+
+      function isEven(a) {
+        if(a%2==0) {
+          return true;
+        }
+        else {
+          return false;
+        }
+      }
+
+      function isPositive(num) {
+        if(num>0) {
+          return true;
+        }
+        else {
+          return false;
+        }
+      }
+
+      function isPalindrome(str) {
+        var len=(str.length/2);
+        for( var i=0;i<len;i++) {
+          if(str[i]!=str[str.length-1-i]){
+            return false;
+          }
+        }
+        return true;
+        
+      }
+      document.getElementById("even").innerHTML="even or odd : "+isEven(7);
+      // console.log("even or odd :"+isEven(7))
+
+
+      for(var i=0; i<persons.length;i++) {
+        // personn = personn + persons[i].name + " ";
+        var liElem = document.createElement("li");
+        liElem.innerHTML="person names : "+persons[i].name;
+        document.getElementById("ul").appendChild(liElem);
+        // document.getElementsByClassName("personnames")[0].innerHTML=personn;
+        // console.log("person names :"+persons[i].name);
+      }
+
+      for(var i=0;i<emails.length;i++) {
+        if(emails[i].name=="john")
+        document.getElementById("john").innerHTML="email of john : "+emails[i].email;
+        // console.log("email id of john :"+emails[i].email);
+      }
+      var grade =85;
+      if(grade>=60){
+        document.getElementById("grade").innerHTML="grade : "+true;
+        // console.log("grade is :"+true);
+      }
+      else {
+        document.getElementById("grade").innerHTML="grade : "+false;
+        // console.log("grade is :"+false);
+      }
+
+      document.getElementById("positive").innerHTML="ispositive : "+isPositive(-2);
+      // console.log("Positive or not :"+isPositive(-2));
+      document.getElementById("palindrome").innerHTML="ispalindrome : "+isPalindrome("racecar");
+      // console.log("Palindrome or not :"+isPalindrome("racecar"));
+
+      var sumnum=[1,2,3,4,5];
+      var sum =0;
+      for(var i=0;i<sumnum.length;i++) {
+        sum+=sumnum[i];
+      }
+      document.getElementById("sum5").innerHTML="sum of 5 numbers : "+sum;
+      // console.log("sum of 5 numbers:"+sum);
+
+      var alice="Alice";
+
+      if(alice=="Alice"){
+        document.getElementById("alice").innerHTML="Hello Alice";
+        // console.log("Hello Alice")
+      }
+      else {
+        document.getElementById("alice").innerHTML="Hello Stranger";
+
+        // console.log("Hello Stranger");
+      }
+
+      var books = [
+        {
+          title :"Harry potter -1",
+          author:"JK Rowling"
+        },
+        {
+          title :"half girlfriend",
+          author:"chetan bhagat"
+        },
+        {
+          title :"The Great Gatsby",
+          author:"F. Scott Fitzgerald"
+        },
+        
+        {
+          title :"Harry potter and the cursed child",
+          author:"JK Rowling"
+        },
+      ]
+
+      for(var i=0;i<books.length;i++) {
+        if(books[i].title=="The Great Gatsby")
+        document.getElementById("author").innerHTML="author : "+books[i].author;
+        // console.log("Author of The Great Gatsby is :"+books[i].author);
+      }
+
+      function calculateArea(l,w) {
+        return l*w;
+      }
+      console.log("Area of rectangle is "+calculateArea(4,5));
+
+      function prime(n) {
+        for(var i=2;i<n;i++) {
+          if(n%i==0){
+            return false;
+          }
+        }
+        return true;
+      }
+      function primenum(n) {
+        for(var i=2;i<=n;i++) {
+          if(prime(i)) {
+            var liElem = document.createElement("li");
+            liElem.innerHTML="prime number : "+i;
+            document.getElementById("primenum").appendChild(liElem);
+          }
+        }
+      }
+      primenum(10);
 
     </script>
   </body>
