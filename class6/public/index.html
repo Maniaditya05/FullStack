@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>React App</title>
+  </head>
+  <body>
+    <script>
+      var pusharr=[1,2,3,4,5,6]
+      function pusharray(arr,val) {
+        arr.push(val);
+        console.log(arr);
+      }
+      pusharray(pusharr,10)
+
+      var poparr=[1,2,3,4,5,6]
+      function poparray(arr) {
+        arr.pop();
+        console.log(arr);
+      }
+      poparray(poparr)
+
+      var conc1=[1,2,3,4,5]
+      var conc2=["aditya","shanmukh"]
+      var pusharr=[1,2,3,4,5,6]
+      function concatarr(conc1,conc2) {
+        var concat=conc1.concat(conc2);
+        console.log(concat);
+      }
+      concatarr(conc1,conc2)
+
+      var fruits=["banana","apples","oranges"]
+      console.log(fruits.indexOf("apples"));
+
+      var slice=conc1.slice(1,3);
+      console.log(slice);
+
+
+      var uppercase="aditya"
+      function toUpperCase(str) {
+        var str1=str.toUpperCase();
+        console.log(str1);
+      }
+      toUpperCase(uppercase);
+
+      var lowercase="ADITYA"
+      function toLowerCase(str) {
+        var str1=str.toLowerCase();
+        console.log(str1);
+      }
+      toLowerCase(lowercase);
+
+      var strings="aditya hello"
+      function split(str) {
+        var str1=str.split(" ");
+        console.log(str1);
+      }
+      split(strings);
+
+      var charat="aditya"
+      function charAt(str,val) {
+        let str1=str.charAt(val);
+        console.log(str1);
+      }
+      charAt(charat,2);
+
+      var substrin="aditya"
+      function substring(str) {
+        let sub=str.substring(2,5);
+        console.log(sub);
+      }
+      substring(substrin);
+
+      const numbers1 = [45, 4, 9, 16, 25];
+      const numbers2 = numbers1.map(myFunction);
+
+      function myFunction(value, index, array) {
+        return value * 2;
+      }
+
+      console.log(numbers2)
+
+      const numbers = [45, 4, 9, 16, 25];
+      const even = numbers.filter(myFunction);
+
+//const even = numbers.filter((item) => item%2 !== 0)
+      function myFunction(value, index, array) {
+        if(value%2 !==0 ){
+          return value;
+        }
+        return;
+      }
+      console.log(even)
+
+      var num=[2,4,6,8,0,7]
+      num.forEach(myfunction);
+      function myfunction(value) {
+        console.log(value);
+      }
+
+      var strrev="aditya"
+      function stringreverse(strrev) {
+        var r=""
+        for(var i=strrev.length-1;i>=0;i--) {
+          r+=strrev.charAt(i);
+        }
+        return r;
+      }
+
+      function stringreverse1(strrev) {
+        return strrev.split("").reverse().join("");
+      }
+      console.log(stringreverse(strrev));
+      console.log(stringreverse1(strrev));
+
+      var pal="racecar"
+      function palindrome(str) {
+        var revstr=str.split("").reverse().join("");
+        if(str===revstr) {
+          return true;
+        }
+        else
+        return false;
+      }
+      console.log(palindrome(pal));
+
+      var maxnum=[2,5,8,10,22]
+      function maxnum1(max) {
+        temp=0;
+        for(var i=0;i<max.length;i++){
+          if(max[i]>temp)
+          temp=max[i];
+        }
+        return temp;
+      }
+      console.log(maxnum1(maxnum));
+
+      var uniq=[1,2,3,1,2,3]
+      var temp=[];
+      // for(var i=0;i<uniq.length;i++) {
+      //   if(temp.indexOf(uniq[i])== -1) {
+      //     temp.push(uniq[i]);
+      //   }
+      // }
+      
+      uniq.forEach(function myfunction(value, index, array) {
+        if(temp.indexOf(value) == -1) {
+          temp.push(value);
+        }
+      });
+      console.log(temp);
+
+      var asc=[9,8,7,6,5,4,3]
+      function ascendingorder(array) {
+        var done = false;
+        while (!done) {
+          done = true;
+          for (var i = 1; i < array.length; i += 1) {
+            if (array[i - 1] > array[i]) {
+              done = false;
+              var tmp = array[i - 1];
+              array[i - 1] = array[i];
+              array[i] = tmp;
+            }
+          }
+        }
+        return array;
+      }
+      console.log(ascendingorder(asc))
+    </script>
+  </body>
+</html>
