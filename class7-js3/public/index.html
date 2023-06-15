@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>React App</title>
+  </head>
+  <body>
+    <script>
+      var sqr=(a) => a**2;
+      console.log(sqr(2));
+
+      function wordcount (str) {
+        return [...str.split(" ")].length
+        // return count;
+      }
+      var wordc="Hello This is aditya"
+      console.log(wordcount(wordc))
+
+      class persons {
+        constructor(name,age,address){
+          this.name=name;
+          this.age=age;
+          this.address=address;
+        }
+
+        static sum(arr){
+          sum=0;
+          for(var i=0;i<arr.length;i++) {
+            sum+=arr[i];
+          }
+          return sum;
+        }
+      }
+      var aditya =new persons("aditya",25,"848 W Mitchell");
+      console.log(aditya.address);
+
+      var even=(a) => a.filter(num => num%2==0);
+      var evenarr=[1,2,4,5,7,8];
+      console.log(even(evenarr));
+
+      var des=["hello", "hi", "wassup"];
+      const [firstName, ,lastName]=des;
+      console.log(firstName,lastName)
+
+
+      function fibonacci(n)  {
+        var a=0;
+        var b=1;
+        var temp;
+        console.log(a);
+        console.log(b);
+
+        temp=a+b;
+        while(temp<=n) {
+          console.log(temp);
+          a=b;
+          b=temp;
+          temp =a+b;
+        }
+      }
+      fibonacci(13);
+
+      function uppercase(str) {
+        return srt.charat(0).toUpperCase();
+      }
+
+      var include=[1,2,3,4,5,6];
+      console.log(include.includes(4));
+
+      var obj={name :"aditya",
+                age : 25,
+                address : "848 W mitchell"};
+      console.log(Object.values(obj));
+
+      function delay(callback,delay){
+        setTimeout(callback,delay);
+      }
+      function print(str) {
+        console.log("Hello");
+      }
+      delay(print,5000);
+
+
+
+    </script>
+  </body>
+</html>
